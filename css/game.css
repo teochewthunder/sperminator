@@ -1,0 +1,311 @@
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+body
+{
+	font-size: 12px;
+}
+
+#gameContainer
+{
+	width: 600px;
+	height: 600px;
+	margin: 1px auto 0 auto;
+}
+
+#gameContainer  div
+{
+
+}
+
+#viewArea
+{
+	width: 100%;
+	height: 400px;	
+}
+
+#viewLeft
+{
+	width: 100px;
+	height: 100%;
+	float: left;
+}
+
+#viewPort
+{
+	width: 400px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	outline: 1px solid rgb(200, 200, 200);
+}
+	
+#viewRight
+{
+	width: 100px;
+	height: 100%;
+	float: right;
+}
+
+.meterContainer
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.meterBar
+{
+	width: 45%;
+	height: 350px;
+	border-radius: 10px;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+	background: rgba(200, 200, 200, 0.5);
+	background: linear-gradient(90deg, rgba(200, 200, 200, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(200, 200, 200, 0.5) 100%);
+}
+
+.meterBar div
+{
+	width: 100%;
+	height: 100%;
+}
+
+.meterIcon
+{
+	width: 50%;
+	height: 5px;
+	margin: 5px auto 0 auto;
+}
+
+#meterEnergy
+{
+	background: rgb(255, 100, 0);
+	background: linear-gradient(90deg, rgba(255, 100, 0, 1) 0%, rgba(255, 200, 100, 1) 50%, rgba(255, 100, 0, 1) 100%);
+}
+
+#meterHeal
+{
+	background: rgb(200, 0, 0);
+	background: linear-gradient(90deg, rgba(200, 0, 0, 1) 0%, rgba(255, 100, 100, 1) 50%, rgba(200, 0, 0, 1) 100%);		
+}
+
+#meterPower
+{
+	background: rgb(255, 255, 0);
+	background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 200, 1) 50%, rgba(255, 255, 0, 1) 100%);
+}
+
+#meterShield
+{
+	background: rgb(0, 0, 200);
+	background: linear-gradient(90deg, rgba(0, 0, 200, 1) 0%, rgba(100, 100, 255, 1) 50%, rgba(0, 0, 200, 1) 100%);	
+}
+
+.gameArea
+{
+	background-color: transparent;
+	float: left;	
+}
+
+svg
+{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.encounter{ }
+
+/*STORIES*/
+#storyContainer
+{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+#storyContainer .panel
+{
+	width: 500px;
+	height: 400px;
+	margin: 10% auto 0 auto;
+	outline: 1px solid #444444;
+	overflow: hidden;
+}
+
+#storyContainer .content
+{
+	width: 100%;
+	height: 90%;
+	float: left;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#storyContainer .content_left
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+#storyContainer .content_right
+{
+	width: 50%;
+	height: 100%;
+	float: right;
+	text-align: center;
+}
+
+#storyContainer h1
+{
+	font-size: 4em;
+	font-weight: bold;
+	color: rgb(0, 0, 255);
+	text-shadow: color: #FFFFFF;
+	text-shadow: 0 0 5px rgb(255, 255, 0), 0 0 10px rgb(255, 255, 0), 0 0 15px rgb(255, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(255, 255, 0), 0 0 40px rgb(255, 255, 0), 0 0 55px rgb(255, 255, 0), 0 0 75px rgb(255, 255, 0);
+}
+
+/*NOTIFS*/
+#overlayContainer
+{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#overlayContainer .panel
+{
+	width: 500px;
+	height: 400px;
+	margin: 10% auto 0 auto;
+	overflow: hidden;
+	outline: 1px solid #444444;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+#overlayContainer .content
+{
+	width: 100%;
+	height: 90%;
+	float: left;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#overlayContainer .glory
+{
+	background: radial-gradient(circle, rgba(255, 255, 0, 1) 5%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 100%);
+}
+
+#overlayContainer .defeat
+{
+	background: radial-gradient(circle, rgba(100, 100, 100, 1) 5%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 100%);
+}
+
+#overlayContainer .glory h1
+{
+	margin-top: 10%;
+	font-size: 4em;
+	font-weight: bold;
+	color: rgb(0, 0, 255);
+	text-shadow: color: #FFFFFF;
+	text-shadow: 0 0 5px rgb(255, 255, 0), 0 0 10px rgb(255, 255, 0), 0 0 15px rgb(255, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(255, 255, 0), 0 0 40px rgb(255, 255, 0), 0 0 55px rgb(255, 255, 0), 0 0 75px rgb(255, 255, 0);
+}
+
+#overlayContainer .defeat h1
+{
+	margin-top: 10%;
+	font-size: 4em;
+	font-weight: bold;
+	color: rgb(0, 0, 255);
+	text-shadow: color: #FFFFFF;
+	text-shadow: 0 0 5px rgb(100, 100, 100, 0), 0 0 10px rgb(100, 100, 100), 0 0 15px rgb(100, 100, 100), 0 0 20px rgb(100, 100, 100), 0 0 30px rgb(100, 100, 100), 0 0 40px rgb(100, 100, 100), 0 0 55px rgb(100, 100, 100), 0 0 75px rgb(100, 100, 100);
+}
+
+.buttons
+{
+	width: 100%;
+	height: 10%;
+	float: left;
+	text-align: center;
+}
+
+.buttons button
+{
+	width: 8em;
+	height: 2em;
+	float: right;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(100, 100, 255);
+	margin-right: 0.5em;
+	border: 0px solid red;
+	border-radius: 5px;
+}
+
+.buttons button:hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(200, 200, 255);
+}
+
+.buttons .primary
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 255);
+}
+
+.buttons .primary:hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(50, 50, 255);
+}
+
+/* DASHBOARD */
+#dashboardArea
+{
+	width: 100%;
+	height: 200px;
+}
+
+.dashboardButtons
+{
+	margin-top: 10px;
+	height: 90px;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.dashboardButtons button
+{
+	font-size: 50px;
+	width: 90%;
+	height: 100%;
+	color: rgb(255, 255, 255);
+	background-color: rgb(100, 100, 255);
+	border: 0px solid red;
+	border-radius: 10px;
+}
+
+.dashboardButtons button:hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(200, 200, 255);
+}
+

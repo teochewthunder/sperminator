@@ -1,0 +1,37 @@
+.sperm
+{
+	overflow: visible;
+}
+
+.speech
+{	
+	width: 300%;
+	height: 30px;
+	margin-left: -50%;
+}
+
+.speech .content 
+{
+	width: 90%;
+	height: 70%;
+	padding: 5%;
+	border-radius: 5px;
+	background-color: rgba(50, 50, 50, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 12px;
+	text-align: center;	
+}
+
+.speech .pointer 
+{
+	color: rgba(50, 50, 50, 1);
+	font-size: 20px;	
+}
+
+.speech .pointer.up
+{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	margin-bottom: 5px;
+}
