@@ -40,6 +40,29 @@ let story =
 			buttons.append(button);
 		}
 
+		if (type == "victory")
+		{
+			var title = "<h1>成功了!</h1>";
+			var h2 = "<h2>你是冠军!</h2>";
+=
+			var spermContainer = $("<div></div>");
+			spermContainer.attr("style", "width: 60px; margin: 0 auto 0 auto");
+
+			var sperm = $("<div></div>");
+			spermContainer.append(sperm);
+			spermTemplate.render(sperm, 6, 1, ["mask_front", "shield_front"]);
+
+			content.append(title);
+			content.append(h2);
+			content.append(spermContainer);
+
+			var button = $("<button></button>");
+			button.addClass("primary");
+			button.html("重来 &#9654;");
+			button.on("click", ()=>{this.endStory(); this.beginStory("stage1Start");});
+			buttons.append(button);			
+		}
+
 		if (type == "stage1Start")
 		{
 			var contentLeft = $("<div></div>");
