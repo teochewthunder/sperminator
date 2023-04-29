@@ -44,7 +44,7 @@ let story =
 		{
 			var title = "<h1>成功了!</h1>";
 			var h2 = "<h2>你是冠军!</h2>";
-=
+
 			var spermContainer = $("<div></div>");
 			spermContainer.attr("style", "width: 60px; margin: 0 auto 0 auto");
 
@@ -531,8 +531,9 @@ let story =
 			button.on("click", ()=>
 				{
 					this.endNotification(); 
-					game.paused = false;
-					//render sperm hero
+					//game.paused = false;
+					this.endStory(); 
+					this.beginStory(game.stage + "Start");
 				}
 			);
 
@@ -543,8 +544,9 @@ let story =
 			button.on("click", ()=>
 				{
 					this.endNotification(); 
-					game.paused = false;
-					//render sperm hero
+					//game.paused = false;
+					this.endStory(); 
+					this.beginStory("cover");
 				}
 			);
 			buttons.append(button);
